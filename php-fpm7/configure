@@ -1,0 +1,28 @@
+#!/bin/sh
+
+# file used to configure the php build
+# it already includes some often used
+# extensions as pdo sql, openssl, ...
+# in case your app needs it.
+./configure \
+  --enable-fpm \
+  --disable-short-tags \
+  --without-sqlite3 \
+  --without-pdo-sqlite \
+  --with-curl \
+  --with-openssl \
+  --enable-ftp \
+  --with-zlib \
+  --with-bz2 \
+  --with-gd \
+  --with-jpeg-dir=/usr/lib \
+  --enable-gd-native-ttf \
+  --enable-intl \
+  --enable-mbstring \
+  --with-pdo-mysql \
+  --with-libedit \
+  --enable-soap \
+  --enable-zip \
+  --with-mcrypt \
+  --with-xsl
+
